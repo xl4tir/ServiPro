@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2524E5282BC98AAE00F3290B /* ServiProApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2524E5272BC98AAE00F3290B /* ServiProApp.swift */; };
+		2524E52A2BC98AAE00F3290B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2524E5292BC98AAE00F3290B /* ContentView.swift */; };
+		2524E52C2BC98AAE00F3290B /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2524E52B2BC98AAE00F3290B /* Item.swift */; };
+		2524E52E2BC98AB000F3290B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2524E52D2BC98AB000F3290B /* Assets.xcassets */; };
+		2524E5312BC98AB000F3290B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2524E5302BC98AB000F3290B /* Preview Assets.xcassets */; };
+		2524E53B2BC98AB000F3290B /* ServiProTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2524E53A2BC98AB000F3290B /* ServiProTests.swift */; };
+		2524E5452BC98AB000F3290B /* ServiProUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2524E5442BC98AB000F3290B /* ServiProUITests.swift */; };
+		2524E5472BC98AB000F3290B /* ServiProUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2524E5462BC98AB000F3290B /* ServiProUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2524E5372BC98AB000F3290B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2524E51C2BC98AAE00F3290B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2524E5232BC98AAE00F3290B;
+			remoteInfo = ServiPro;
+		};
+		2524E5412BC98AB000F3290B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2524E51C2BC98AAE00F3290B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2524E5232BC98AAE00F3290B;
+			remoteInfo = ServiPro;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2524E5242BC98AAE00F3290B /* ServiPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ServiPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2524E5272BC98AAE00F3290B /* ServiProApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiProApp.swift; sourceTree = "<group>"; };
+		2524E5292BC98AAE00F3290B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2524E52B2BC98AAE00F3290B /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		2524E52D2BC98AB000F3290B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2524E5302BC98AB000F3290B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2524E5362BC98AB000F3290B /* ServiProTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ServiProTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2524E53A2BC98AB000F3290B /* ServiProTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiProTests.swift; sourceTree = "<group>"; };
+		2524E5402BC98AB000F3290B /* ServiProUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ServiProUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2524E5442BC98AB000F3290B /* ServiProUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiProUITests.swift; sourceTree = "<group>"; };
+		2524E5462BC98AB000F3290B /* ServiProUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiProUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2524E5212BC98AAE00F3290B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2524E5332BC98AB000F3290B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2524E53D2BC98AB000F3290B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2524E51B2BC98AAE00F3290B = {
+			isa = PBXGroup;
+			children = (
+				2524E5262BC98AAE00F3290B /* ServiPro */,
+				2524E5392BC98AB000F3290B /* ServiProTests */,
+				2524E5432BC98AB000F3290B /* ServiProUITests */,
+				2524E5252BC98AAE00F3290B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2524E5252BC98AAE00F3290B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2524E5242BC98AAE00F3290B /* ServiPro.app */,
+				2524E5362BC98AB000F3290B /* ServiProTests.xctest */,
+				2524E5402BC98AB000F3290B /* ServiProUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2524E5262BC98AAE00F3290B /* ServiPro */ = {
+			isa = PBXGroup;
+			children = (
+				2524E5272BC98AAE00F3290B /* ServiProApp.swift */,
+				2524E5292BC98AAE00F3290B /* ContentView.swift */,
+				2524E52B2BC98AAE00F3290B /* Item.swift */,
+				2524E52D2BC98AB000F3290B /* Assets.xcassets */,
+				2524E52F2BC98AB000F3290B /* Preview Content */,
+			);
+			path = ServiPro;
+			sourceTree = "<group>";
+		};
+		2524E52F2BC98AB000F3290B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2524E5302BC98AB000F3290B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2524E5392BC98AB000F3290B /* ServiProTests */ = {
+			isa = PBXGroup;
+			children = (
+				2524E53A2BC98AB000F3290B /* ServiProTests.swift */,
+			);
+			path = ServiProTests;
+			sourceTree = "<group>";
+		};
+		2524E5432BC98AB000F3290B /* ServiProUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2524E5442BC98AB000F3290B /* ServiProUITests.swift */,
+				2524E5462BC98AB000F3290B /* ServiProUITestsLaunchTests.swift */,
+			);
+			path = ServiProUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2524E5232BC98AAE00F3290B /* ServiPro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2524E54A2BC98AB000F3290B /* Build configuration list for PBXNativeTarget "ServiPro" */;
+			buildPhases = (
+				2524E5202BC98AAE00F3290B /* Sources */,
+				2524E5212BC98AAE00F3290B /* Frameworks */,
+				2524E5222BC98AAE00F3290B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ServiPro;
+			productName = ServiPro;
+			productReference = 2524E5242BC98AAE00F3290B /* ServiPro.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2524E5352BC98AB000F3290B /* ServiProTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2524E54D2BC98AB000F3290B /* Build configuration list for PBXNativeTarget "ServiProTests" */;
+			buildPhases = (
+				2524E5322BC98AB000F3290B /* Sources */,
+				2524E5332BC98AB000F3290B /* Frameworks */,
+				2524E5342BC98AB000F3290B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2524E5382BC98AB000F3290B /* PBXTargetDependency */,
+			);
+			name = ServiProTests;
+			productName = ServiProTests;
+			productReference = 2524E5362BC98AB000F3290B /* ServiProTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2524E53F2BC98AB000F3290B /* ServiProUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2524E5502BC98AB000F3290B /* Build configuration list for PBXNativeTarget "ServiProUITests" */;
+			buildPhases = (
+				2524E53C2BC98AB000F3290B /* Sources */,
+				2524E53D2BC98AB000F3290B /* Frameworks */,
+				2524E53E2BC98AB000F3290B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2524E5422BC98AB000F3290B /* PBXTargetDependency */,
+			);
+			name = ServiProUITests;
+			productName = ServiProUITests;
+			productReference = 2524E5402BC98AB000F3290B /* ServiProUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2524E51C2BC98AAE00F3290B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					2524E5232BC98AAE00F3290B = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					2524E5352BC98AB000F3290B = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 2524E5232BC98AAE00F3290B;
+					};
+					2524E53F2BC98AB000F3290B = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 2524E5232BC98AAE00F3290B;
+					};
+				};
+			};
+			buildConfigurationList = 2524E51F2BC98AAE00F3290B /* Build configuration list for PBXProject "ServiPro" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2524E51B2BC98AAE00F3290B;
+			productRefGroup = 2524E5252BC98AAE00F3290B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2524E5232BC98AAE00F3290B /* ServiPro */,
+				2524E5352BC98AB000F3290B /* ServiProTests */,
+				2524E53F2BC98AB000F3290B /* ServiProUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2524E5222BC98AAE00F3290B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2524E5312BC98AB000F3290B /* Preview Assets.xcassets in Resources */,
+				2524E52E2BC98AB000F3290B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2524E5342BC98AB000F3290B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2524E53E2BC98AB000F3290B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2524E5202BC98AAE00F3290B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2524E52A2BC98AAE00F3290B /* ContentView.swift in Sources */,
+				2524E52C2BC98AAE00F3290B /* Item.swift in Sources */,
+				2524E5282BC98AAE00F3290B /* ServiProApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2524E5322BC98AB000F3290B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2524E53B2BC98AB000F3290B /* ServiProTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2524E53C2BC98AB000F3290B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2524E5472BC98AB000F3290B /* ServiProUITestsLaunchTests.swift in Sources */,
+				2524E5452BC98AB000F3290B /* ServiProUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2524E5382BC98AB000F3290B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2524E5232BC98AAE00F3290B /* ServiPro */;
+			targetProxy = 2524E5372BC98AB000F3290B /* PBXContainerItemProxy */;
+		};
+		2524E5422BC98AB000F3290B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2524E5232BC98AAE00F3290B /* ServiPro */;
+			targetProxy = 2524E5412BC98AB000F3290B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2524E5482BC98AB000F3290B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2524E5492BC98AB000F3290B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2524E54B2BC98AB000F3290B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ServiPro/Preview Content\"";
+				DEVELOPMENT_TEAM = Q2M2NQSXFB;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ServiPro.ServiPro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2524E54C2BC98AB000F3290B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ServiPro/Preview Content\"";
+				DEVELOPMENT_TEAM = Q2M2NQSXFB;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ServiPro.ServiPro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2524E54E2BC98AB000F3290B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q2M2NQSXFB;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ServiPro.ServiProTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ServiPro.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ServiPro";
+			};
+			name = Debug;
+		};
+		2524E54F2BC98AB000F3290B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q2M2NQSXFB;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ServiPro.ServiProTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ServiPro.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ServiPro";
+			};
+			name = Release;
+		};
+		2524E5512BC98AB000F3290B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q2M2NQSXFB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ServiPro.ServiProUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ServiPro;
+			};
+			name = Debug;
+		};
+		2524E5522BC98AB000F3290B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q2M2NQSXFB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ServiPro.ServiProUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ServiPro;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2524E51F2BC98AAE00F3290B /* Build configuration list for PBXProject "ServiPro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2524E5482BC98AB000F3290B /* Debug */,
+				2524E5492BC98AB000F3290B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2524E54A2BC98AB000F3290B /* Build configuration list for PBXNativeTarget "ServiPro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2524E54B2BC98AB000F3290B /* Debug */,
+				2524E54C2BC98AB000F3290B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2524E54D2BC98AB000F3290B /* Build configuration list for PBXNativeTarget "ServiProTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2524E54E2BC98AB000F3290B /* Debug */,
+				2524E54F2BC98AB000F3290B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2524E5502BC98AB000F3290B /* Build configuration list for PBXNativeTarget "ServiProUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2524E5512BC98AB000F3290B /* Debug */,
+				2524E5522BC98AB000F3290B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2524E51C2BC98AAE00F3290B /* Project object */;
+}
