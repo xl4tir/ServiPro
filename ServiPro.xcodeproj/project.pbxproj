@@ -22,6 +22,7 @@
 		2524E55E2BC9908600F3290B /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2524E55D2BC9908600F3290B /* Order.swift */; };
 		2524E5612BD00D5300F3290B /* EmployeeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2524E5602BD00D5300F3290B /* EmployeeView.swift */; };
 		2524E5652BD01FA600F3290B /* ScheduleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2524E5642BD01FA600F3290B /* ScheduleType.swift */; };
+		2524E5672BD0487E00F3290B /* OrderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2524E5662BD0487E00F3290B /* OrderManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		2524E55D2BC9908600F3290B /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		2524E5602BD00D5300F3290B /* EmployeeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeView.swift; sourceTree = "<group>"; };
 		2524E5642BD01FA600F3290B /* ScheduleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleType.swift; sourceTree = "<group>"; };
+		2524E5662BD0487E00F3290B /* OrderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 				2524E55B2BC9907000F3290B /* Client.swift */,
 				2524E55D2BC9908600F3290B /* Order.swift */,
 				2524E5642BD01FA600F3290B /* ScheduleType.swift */,
+				2524E5662BD0487E00F3290B /* OrderManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2524E5672BD0487E00F3290B /* OrderManager.swift in Sources */,
 				2524E52A2BC98AAE00F3290B /* ContentView.swift in Sources */,
 				2524E55C2BC9907000F3290B /* Client.swift in Sources */,
 				2524E55E2BC9908600F3290B /* Order.swift in Sources */,
