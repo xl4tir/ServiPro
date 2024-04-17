@@ -25,7 +25,7 @@ struct ContentView: View {
                     newEmail = user.email
                 }
                 .sheet(isPresented: $isEditingProfile) {
-                    EditProfileView(user: user, newName: $newName, newEmail: $newEmail)
+                    EditProfileView(user: user, newName: $newName, newEmail: $newEmail, isEditingProfile: $isEditingProfile)
                 }
             }
             .padding()
@@ -38,6 +38,7 @@ struct EditProfileView: View {
     @ObservedObject var user: User
     @Binding var newName: String
     @Binding var newEmail: String
+    @Binding var isEditingProfile: Bool
     
     var body: some View {
         VStack {
@@ -57,6 +58,7 @@ struct EditProfileView: View {
                 user.updateProfile(username: newName, email: newEmail)
                 newName = ""
                 newEmail = ""
+                isEditingProfile = false
             }
             .padding()
         }
