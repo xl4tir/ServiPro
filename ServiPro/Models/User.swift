@@ -1,16 +1,14 @@
 import SwiftUI
 import Combine
 
-
-
 class User: ObservableObject {
     @Published var userId: Int
-    @Published var username: String?
-    @Published var password: String?
+    @Published var username: String
+    @Published var password: String
     @Published var email: String?
-    @Published var userType: UserType?
+    @Published var userType: UserType // Перерахування для типу користувача
 
-    init(userId: Int, username: String?, password: String?, email: String?, userType: UserType?) {
+    init(userId: Int, username: String, password: String, email: String, userType: UserType) {
         self.userId = userId
         self.username = username
         self.password = password
@@ -19,21 +17,20 @@ class User: ObservableObject {
     }
     
     func login() {
-        if let username = username, let password = password {
-            // Логіка авторизації користувача з перевіркою на nil
-            print("Авторизація для користувача \(username)")
-        } else {
-            print("Недостатньо даних для авторизації")
-        }
+        // Логіка авторизації користувача
     }
     
-    func updateProfile(username: String?, email: String?) {
-        if let newUsername = username {
-            self.username = newUsername
-        }
-        if let newEmail = email {
-            self.email = newEmail
-        }
+    func logout() {
+        // Логіка виходу з облікового запису
+    }
+    
+    func updateProfile(username: String, email: String) {
+        self.username = username
+        self.email = email
+    }
+    
+    func viewOrders() {
+        // Логіка перегляду замовлень користувача
     }
     
     func displayUserInfo() -> some View {
@@ -41,18 +38,11 @@ class User: ObservableObject {
             Text("User Information:")
                 .font(.title)
             
-            if let username = username {
-                Text("Username: \(username)")
-            }
-            
-            if let email = email {
-                Text("Email: \(email)")
-            }
-            
-            if let userType = userType {
-                Text("User Type: \(userType == .client ? "Client" : "Employee")")
-            }
+            Text("Username: \(self.username)")
+            Text("Email: \(self.email)")
+            Text("User Type: \(self.userType == .client ? "Client" : "Employee")")
         }
     }
 }
+
 
