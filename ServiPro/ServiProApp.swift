@@ -29,14 +29,19 @@ struct ServiProApp: App {
     var body: some Scene {
             WindowGroup {
                 TabView {
-                    ContentView() // Перший вкладка з першим View
+                    ContentView()
                         .tabItem {
-                            Label("First", systemImage: "1.circle")
+                            Label("User", systemImage: "1.circle")
                         }
 
-                    EmployeeView() // Другий вкладка з другим View
+                    EmployeeView()
                         .tabItem {
-                            Label("Second", systemImage: "2.circle")
+                            Label("Employee", systemImage: "2.circle")
+                        }
+                    
+                    OrderView()
+                        .tabItem {
+                            Label("Order", systemImage: "3.circle")
                         }
                 }
             }

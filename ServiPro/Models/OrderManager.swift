@@ -7,7 +7,9 @@ class OrderManager {
         print("Обробка замовлення...")
     }
     
-    func cancelOrder(orderId: Int) {
-        print("Замволення " ,orderId ," скасовано!")
+    func cancelOrder(order: Order) {
+        order.status = "Скасовано"
+        print("Замволення " ,order.orderId ," скасовано!")
+       
     }
 }

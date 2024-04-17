@@ -23,6 +23,7 @@
 		2524E5612BD00D5300F3290B /* EmployeeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2524E5602BD00D5300F3290B /* EmployeeView.swift */; };
 		2524E5652BD01FA600F3290B /* ScheduleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2524E5642BD01FA600F3290B /* ScheduleType.swift */; };
 		2524E5672BD0487E00F3290B /* OrderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2524E5662BD0487E00F3290B /* OrderManager.swift */; };
+		2524E5692BD04A8800F3290B /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2524E5682BD04A8800F3290B /* OrderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		2524E5602BD00D5300F3290B /* EmployeeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeView.swift; sourceTree = "<group>"; };
 		2524E5642BD01FA600F3290B /* ScheduleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleType.swift; sourceTree = "<group>"; };
 		2524E5662BD0487E00F3290B /* OrderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderManager.swift; sourceTree = "<group>"; };
+		2524E5682BD04A8800F3290B /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +176,7 @@
 			children = (
 				2524E5292BC98AAE00F3290B /* ContentView.swift */,
 				2524E5602BD00D5300F3290B /* EmployeeView.swift */,
+				2524E5682BD04A8800F3290B /* OrderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 				2524E5612BD00D5300F3290B /* EmployeeView.swift in Sources */,
 				2524E55A2BC9904400F3290B /* UserType.swift in Sources */,
 				2524E52C2BC98AAE00F3290B /* Item.swift in Sources */,
+				2524E5692BD04A8800F3290B /* OrderView.swift in Sources */,
 				2524E5582BC98FFD00F3290B /* User.swift in Sources */,
 				2524E5282BC98AAE00F3290B /* ServiProApp.swift in Sources */,
 			);
