@@ -1,12 +1,14 @@
+import Foundation
+
 class Order {
     var orderId: Int
     var client: Client
     var employee: Employee
     var serviceType: String
     var status: String
-    var details: String
-    
-    init(orderId: Int, client: Client, employee: Employee, serviceType: String, status: String, details: String) {
+    var details: String? // Поле details тепер стало опціональним (nullable)
+
+    init(orderId: Int, client: Client, employee: Employee, serviceType: String, status: String, details: String?) {
         self.orderId = orderId
         self.client = client
         self.employee = employee
@@ -20,5 +22,3 @@ class Order {
         self.status = newStatus
     }
 }
-
-import Foundation
