@@ -24,6 +24,11 @@
 		2524E5652BD01FA600F3290B /* ScheduleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2524E5642BD01FA600F3290B /* ScheduleType.swift */; };
 		2524E5672BD0487E00F3290B /* OrderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2524E5662BD0487E00F3290B /* OrderManager.swift */; };
 		2524E5692BD04A8800F3290B /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2524E5682BD04A8800F3290B /* OrderView.swift */; };
+		2524E56B2BD064BA00F3290B /* VerticalItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2524E56A2BD064BA00F3290B /* VerticalItemView.swift */; };
+		2524E56D2BD0667500F3290B /* HorizontalItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2524E56C2BD0667500F3290B /* HorizontalItemView.swift */; };
+		2524E56F2BD0743100F3290B /* EmployeeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2524E56E2BD0743100F3290B /* EmployeeListView.swift */; };
+		2524E5712BD07A8200F3290B /* EmployeeListView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2524E5702BD07A8200F3290B /* EmployeeListView2.swift */; };
+		2524E5732BD07EEF00F3290B /* EmployeeGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2524E5722BD07EEF00F3290B /* EmployeeGridView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +69,11 @@
 		2524E5642BD01FA600F3290B /* ScheduleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleType.swift; sourceTree = "<group>"; };
 		2524E5662BD0487E00F3290B /* OrderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderManager.swift; sourceTree = "<group>"; };
 		2524E5682BD04A8800F3290B /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		2524E56A2BD064BA00F3290B /* VerticalItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalItemView.swift; sourceTree = "<group>"; };
+		2524E56C2BD0667500F3290B /* HorizontalItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalItemView.swift; sourceTree = "<group>"; };
+		2524E56E2BD0743100F3290B /* EmployeeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListView.swift; sourceTree = "<group>"; };
+		2524E5702BD07A8200F3290B /* EmployeeListView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListView2.swift; sourceTree = "<group>"; };
+		2524E5722BD07EEF00F3290B /* EmployeeGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeGridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +187,11 @@
 				2524E5292BC98AAE00F3290B /* ContentView.swift */,
 				2524E5602BD00D5300F3290B /* EmployeeView.swift */,
 				2524E5682BD04A8800F3290B /* OrderView.swift */,
+				2524E56A2BD064BA00F3290B /* VerticalItemView.swift */,
+				2524E56C2BD0667500F3290B /* HorizontalItemView.swift */,
+				2524E56E2BD0743100F3290B /* EmployeeListView.swift */,
+				2524E5702BD07A8200F3290B /* EmployeeListView2.swift */,
+				2524E5722BD07EEF00F3290B /* EmployeeGridView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -312,14 +327,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				2524E5672BD0487E00F3290B /* OrderManager.swift in Sources */,
+				2524E56D2BD0667500F3290B /* HorizontalItemView.swift in Sources */,
 				2524E52A2BC98AAE00F3290B /* ContentView.swift in Sources */,
 				2524E55C2BC9907000F3290B /* Client.swift in Sources */,
+				2524E5732BD07EEF00F3290B /* EmployeeGridView.swift in Sources */,
 				2524E55E2BC9908600F3290B /* Order.swift in Sources */,
 				2524E5562BC98D8100F3290B /* Employee.swift in Sources */,
 				2524E5652BD01FA600F3290B /* ScheduleType.swift in Sources */,
 				2524E5612BD00D5300F3290B /* EmployeeView.swift in Sources */,
 				2524E55A2BC9904400F3290B /* UserType.swift in Sources */,
+				2524E56B2BD064BA00F3290B /* VerticalItemView.swift in Sources */,
 				2524E52C2BC98AAE00F3290B /* Item.swift in Sources */,
+				2524E5712BD07A8200F3290B /* EmployeeListView2.swift in Sources */,
+				2524E56F2BD0743100F3290B /* EmployeeListView.swift in Sources */,
 				2524E5692BD04A8800F3290B /* OrderView.swift in Sources */,
 				2524E5582BC98FFD00F3290B /* User.swift in Sources */,
 				2524E5282BC98AAE00F3290B /* ServiProApp.swift in Sources */,

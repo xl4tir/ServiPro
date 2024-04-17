@@ -1,6 +1,6 @@
 import Foundation
 
-class Employee: User {
+class Employee: User, Identifiable {
     var employeeId: Int
     var serviceType: String
     var schedule: [ScheduleType] // Розклад у форматі днів тижня
