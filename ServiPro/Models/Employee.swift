@@ -1,32 +1,42 @@
+import Foundation
+
 class Employee: User {
     var employeeId: Int
     var serviceType: String
-    var schedule: [String] // Припустимо, розклад у форматі днів тижня
+    var schedule: [ScheduleType] // Розклад у форматі днів тижня
     
-    init(userId: Int, username: String, password: String, email: String, employeeId: Int, serviceType: String, schedule: [String]) {
+    // Конструктор з параметрами та дефолтними значеннями
+    init(userId: Int = 0, username: String = "", password: String = "", email: String = "", employeeId: Int = 0, serviceType: String = "", schedule: [ScheduleType] = []) {
         self.employeeId = employeeId
         self.serviceType = serviceType
         self.schedule = schedule
         super.init(userId: userId, username: username, password: password, email: email, userType: .employee)
     }
     
+    // Функція для перегляду розкладу працівника
     func viewSchedule() {
-        // Логіка перегляду розкладу працівника
-    }
-    
-    func acceptOrder(orderId: Int) {
-        // Логіка прийняття замовлення
-    }
-    
-    func rejectOrder(orderId: Int) {
-        // Логіка відхилення замовлення
-    }
-    
-    func changeOrderStatus(orderId: Int, newStatus: String) {
-        // Логіка зміни статусу замовлення
-    }
-    
-    static func staticMethod() {
-            print("This is a static method of Employee class.")
+        print("Employee \(self.username) schedule:")
+        for day in schedule {
+            print("- \(ScheduleType.stringFromScheduleType(day))")
         }
-}
+    }
+    
+    // Функція для прийняття замовлення
+    func acceptOrder(orderId: Int) {
+        print("Order \(orderId) has been accepted by \(self.username)")
+    }
+    
+    // Функція для відхилення замовлення
+    func rejectOrder(orderId: Int) {
+        print("Order \(orderId) has been rejected by \(self.username)")
+    }
+    
+    // Функція для зміни статусу замовлення
+    func changeOrderStatus(orderId: Int, newStatus: String) {
+        print("Order \(orderId) status changed to \(newStatus) by \(self.username)")
+    }
+    
+    // Статичний метод для класу Employee
+    static func staticMethod() {
+        print("This is a static method of Employee class.")
+    }
