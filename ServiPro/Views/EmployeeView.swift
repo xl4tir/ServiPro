@@ -23,9 +23,18 @@ struct EmployeeView: View {
             .padding()
             
             
-            // Приклад виклику статичного методу
-            Button("Static Method") {
-                Employee.staticMethod()
+            Button("Accept Order") {
+                employee.acceptOrder(orderId: 1)
+            }
+            .padding()
+            
+            Button("Reject Order") {
+                employee.rejectOrder(orderId: 1)
+            }
+            .padding()
+            
+            Button("Change Order Status") {
+                employee.changeOrderStatus(orderId: 1, newStatus: "Виконується")
             }
             .padding()
         }
