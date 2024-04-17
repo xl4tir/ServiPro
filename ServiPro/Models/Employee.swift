@@ -40,4 +40,3 @@ class Employee: User {
     static func staticMethod() {
         print("This is a static method of Employee class.")
     }
-}
