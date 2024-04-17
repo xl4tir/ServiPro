@@ -14,11 +14,7 @@ struct EmployeeRow1: View {
             Text(employee.username)
                 .font(.headline)
                 .padding(.bottom, 4)
-            
-            Text(employee.serviceType)
-                .font(.subheadline)
-            
-        
+           
         }
         .padding()
         .background(Color.gray.opacity(0.1))
@@ -36,7 +32,7 @@ struct EmployeeGrid: View {
         ScrollView {
             LazyVGrid(columns: columns, spacing: 16) {
                 ForEach(employees) { employee in
-                    EmployeeRow(employee: employee)
+                    EmployeeRow1(employee: employee)
                         .padding(.horizontal, 8)
                 }
             }
