@@ -15,6 +15,11 @@
 		2524E53B2BC98AB000F3290B /* ServiProTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2524E53A2BC98AB000F3290B /* ServiProTests.swift */; };
 		2524E5452BC98AB000F3290B /* ServiProUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2524E5442BC98AB000F3290B /* ServiProUITests.swift */; };
 		2524E5472BC98AB000F3290B /* ServiProUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2524E5462BC98AB000F3290B /* ServiProUITestsLaunchTests.swift */; };
+		2524E5562BC98D8100F3290B /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2524E5552BC98D8100F3290B /* Employee.swift */; };
+		2524E5582BC98FFD00F3290B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2524E5572BC98FFD00F3290B /* User.swift */; };
+		2524E55A2BC9904400F3290B /* UserType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2524E5592BC9904400F3290B /* UserType.swift */; };
+		2524E55C2BC9907000F3290B /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2524E55B2BC9907000F3290B /* Client.swift */; };
+		2524E55E2BC9908600F3290B /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2524E55D2BC9908600F3290B /* Order.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +51,11 @@
 		2524E5402BC98AB000F3290B /* ServiProUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ServiProUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2524E5442BC98AB000F3290B /* ServiProUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiProUITests.swift; sourceTree = "<group>"; };
 		2524E5462BC98AB000F3290B /* ServiProUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiProUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2524E5552BC98D8100F3290B /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		2524E5572BC98FFD00F3290B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2524E5592BC9904400F3290B /* UserType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserType.swift; sourceTree = "<group>"; };
+		2524E55B2BC9907000F3290B /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		2524E55D2BC9908600F3290B /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +106,8 @@
 		2524E5262BC98AAE00F3290B /* ServiPro */ = {
 			isa = PBXGroup;
 			children = (
+				2524E5542BC98D5A00F3290B /* Models */,
+				2524E5532BC98CE800F3290B /* Controllers */,
 				2524E5272BC98AAE00F3290B /* ServiProApp.swift */,
 				2524E5292BC98AAE00F3290B /* ContentView.swift */,
 				2524E52B2BC98AAE00F3290B /* Item.swift */,
@@ -128,6 +140,25 @@
 				2524E5462BC98AB000F3290B /* ServiProUITestsLaunchTests.swift */,
 			);
 			path = ServiProUITests;
+			sourceTree = "<group>";
+		};
+		2524E5532BC98CE800F3290B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2524E5542BC98D5A00F3290B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2524E5552BC98D8100F3290B /* Employee.swift */,
+				2524E5572BC98FFD00F3290B /* User.swift */,
+				2524E5592BC9904400F3290B /* UserType.swift */,
+				2524E55B2BC9907000F3290B /* Client.swift */,
+				2524E55D2BC9908600F3290B /* Order.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,7 +292,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2524E52A2BC98AAE00F3290B /* ContentView.swift in Sources */,
+				2524E55C2BC9907000F3290B /* Client.swift in Sources */,
+				2524E55E2BC9908600F3290B /* Order.swift in Sources */,
+				2524E5562BC98D8100F3290B /* Employee.swift in Sources */,
+				2524E55A2BC9904400F3290B /* UserType.swift in Sources */,
 				2524E52C2BC98AAE00F3290B /* Item.swift in Sources */,
+				2524E5582BC98FFD00F3290B /* User.swift in Sources */,
 				2524E5282BC98AAE00F3290B /* ServiProApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

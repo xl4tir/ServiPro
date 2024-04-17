@@ -9,49 +9,58 @@ import SwiftUI
 import SwiftData
 
 struct ContentView: View {
-    @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
+    @StateObject var user: User = User(userId: 1, username: "john_doe", password: "password123", email: "john.doe@example.com", userType: .client)
+    @State private var isEditingProfile = false
+    @State private var newName = ""
+    @State private var newEmail = ""
 
     var body: some View {
-        NavigationSplitView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-                    } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
-                    }
+        NavigationView {
+            VStack(alignment: .leading, spacing: 10) {
+                user.displayUserInfo()
+                
+                Button("Update Profile") {
+                    isEditingProfile = true
+                    newName = user.username
+                    newEmail = user.email
                 }
-                .onDelete(perform: deleteItems)
-            }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
+                .sheet(isPresented: $isEditingProfile) {
+                    EditProfileView(user: user, newName: $newName, newEmail: $newEmail)
                 }
             }
-        } detail: {
-            Text("Select an item")
+            .padding()
+            .navigationTitle("Profile")
         }
     }
+}
 
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(timestamp: Date())
-            modelContext.insert(newItem)
-        }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            for index in offsets {
-                modelContext.delete(items[index])
+struct EditProfileView: View {
+    @ObservedObject var user: User
+    @Binding var newName: String
+    @Binding var newEmail: String
+    
+    var body: some View {
+        VStack {
+            Text("Edit Profile")
+                .font(.headline)
+                .padding(.bottom, 20)
+            
+            TextField("New Username", text: $newName)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .padding()
+            
+            TextField("New Email", text: $newEmail)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .padding()
+            
+            Button("Save") {
+                user.updateProfile(username: newName, email: newEmail)
+                newName = ""
+                newEmail = ""
             }
+            .padding()
         }
+        .padding()
     }
 }
 

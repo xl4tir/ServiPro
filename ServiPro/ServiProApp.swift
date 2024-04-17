@@ -10,6 +10,9 @@ import SwiftData
 
 @main
 struct ServiProApp: App {
+    
+    
+    
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Item.self,
