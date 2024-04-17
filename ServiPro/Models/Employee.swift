@@ -25,4 +25,8 @@ class Employee: User {
     func changeOrderStatus(orderId: Int, newStatus: String) {
         // Логіка зміни статусу замовлення
     }
+    
+    static func staticMethod() {
+            print("This is a static method of Employee class.")
+        }
 }

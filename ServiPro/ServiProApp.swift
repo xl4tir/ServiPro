@@ -27,9 +27,20 @@ struct ServiProApp: App {
     }()
 
     var body: some Scene {
-        WindowGroup {
-            ContentView()
+            WindowGroup {
+                TabView {
+                    ContentView() // Перший вкладка з першим View
+                        .tabItem {
+                            Label("First", systemImage: "1.circle")
+                        }
+
+                    EmployeeView() // Другий вкладка з другим View
+                        .tabItem {
+                            Label("Second", systemImage: "2.circle")
+                        }
+                }
+            }
         }
-        .modelContainer(sharedModelContainer)
-    }
+    
+    
 }
