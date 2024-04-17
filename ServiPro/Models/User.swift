@@ -5,7 +5,7 @@ class User: ObservableObject {
     @Published var userId: Int
     @Published var username: String
     @Published var password: String
-    @Published var email: String?
+    @Published var email: String
     @Published var userType: UserType // Перерахування для типу користувача
 
     init(userId: Int, username: String, password: String, email: String, userType: UserType) {
