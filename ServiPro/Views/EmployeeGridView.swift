@@ -26,7 +26,7 @@ struct EmployeeRow1: View {
 
 struct EmployeeGrid: View {
     let employees: [Employee]
-    let columns = [GridItem(.flexible()), GridItem(.flexible())] // 2 columns
+    let columns = [GridItem(.flexible()), GridItem(.flexible())] 
     
     var body: some View {
         ScrollView {
