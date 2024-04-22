@@ -29,6 +29,7 @@
 		2524E56F2BD0743100F3290B /* EmployeeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2524E56E2BD0743100F3290B /* EmployeeListView.swift */; };
 		2524E5712BD07A8200F3290B /* EmployeeListView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2524E5702BD07A8200F3290B /* EmployeeListView2.swift */; };
 		2524E5732BD07EEF00F3290B /* EmployeeGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2524E5722BD07EEF00F3290B /* EmployeeGridView.swift */; };
+		2524E5772BD6868B00F3290B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2524E5762BD6868B00F3290B /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		2524E56E2BD0743100F3290B /* EmployeeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListView.swift; sourceTree = "<group>"; };
 		2524E5702BD07A8200F3290B /* EmployeeListView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListView2.swift; sourceTree = "<group>"; };
 		2524E5722BD07EEF00F3290B /* EmployeeGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeGridView.swift; sourceTree = "<group>"; };
+		2524E5762BD6868B00F3290B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +194,7 @@
 				2524E56E2BD0743100F3290B /* EmployeeListView.swift */,
 				2524E5702BD07A8200F3290B /* EmployeeListView2.swift */,
 				2524E5722BD07EEF00F3290B /* EmployeeGridView.swift */,
+				2524E5762BD6868B00F3290B /* ProfileView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				2524E5652BD01FA600F3290B /* ScheduleType.swift in Sources */,
 				2524E5612BD00D5300F3290B /* EmployeeView.swift in Sources */,
 				2524E55A2BC9904400F3290B /* UserType.swift in Sources */,
+				2524E5772BD6868B00F3290B /* ProfileView.swift in Sources */,
 				2524E56B2BD064BA00F3290B /* VerticalItemView.swift in Sources */,
 				2524E52C2BC98AAE00F3290B /* Item.swift in Sources */,
 				2524E5712BD07A8200F3290B /* EmployeeListView2.swift in Sources */,
