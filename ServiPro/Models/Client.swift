@@ -9,10 +9,10 @@ class Client: User {
     }
     
     func placeOrder(serviceType: String, details: String) {
-        // Логіка розміщення нового замовлення
+        
     }
     
     func contactEmployee(employeeId: Int) {
-        // Логіка зв'язку з працівником
+     
     }
 }

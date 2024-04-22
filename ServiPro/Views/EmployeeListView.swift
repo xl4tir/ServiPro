@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct EmployeeListView: View {
-    // Створення колекції працівників
+   
     let employees = [
         Employee(userId: 1, username: "Іван", password: "ivan123", email: "ivan@example.com", employeeId: 101, serviceType: "Доставка", schedule: [.monday, .wednesday, .friday]),
         Employee(userId: 2, username: "Марія", password: "maria456", email: "maria@example.com", employeeId: 102, serviceType: "Консультація", schedule: [.tuesday, .thursday]),

@@ -6,7 +6,7 @@ class User: ObservableObject {
     @Published var username: String
     @Published var password: String
     @Published var email: String
-    @Published var userType: UserType 
+    @Published var userType: UserType
 
     init(userId: Int, username: String, password: String, email: String, userType: UserType) {
         self.userId = userId
@@ -17,11 +17,11 @@ class User: ObservableObject {
     }
     
     func login() {
-        // Логіка авторизації користувача
+    
     }
     
     func logout() {
-        // Логіка виходу з облікового запису
+        
     }
     
     func updateProfile(username: String, email: String) {
@@ -30,19 +30,21 @@ class User: ObservableObject {
     }
     
     func viewOrders() {
-        // Логіка перегляду замовлень користувача
+     
     }
     
-    func displayUserInfo() -> some View {
-        VStack(alignment: .leading, spacing: 10) {
-            Text("User Information:")
-                .font(.title)
-            
-            Text("Username: \(self.username)")
-            Text("Email: \(self.email)")
-            Text("User Type: \(self.userType == .client ? "Client" : "Employee")")
+    func displayUserInfo() -> AnyView {
+            return AnyView(
+                VStack(alignment: .leading, spacing: 10) {
+                    Text("User Information:")
+                        .font(.title)
+                    
+                    Text("Username: \(self.username)")
+                    Text("Email: \(self.email)")
+                    Text("User Type: \(self.userType == .client ? "Client" : "Employee")")
+                }
+            )
         }
-    }
 }
 
 
