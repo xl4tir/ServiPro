@@ -30,6 +30,11 @@
 		2524E5712BD07A8200F3290B /* EmployeeListView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2524E5702BD07A8200F3290B /* EmployeeListView2.swift */; };
 		2524E5732BD07EEF00F3290B /* EmployeeGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2524E5722BD07EEF00F3290B /* EmployeeGridView.swift */; };
 		2524E5772BD6868B00F3290B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2524E5762BD6868B00F3290B /* ProfileView.swift */; };
+		2524E5792BD695A800F3290B /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2524E5782BD695A800F3290B /* Transaction.swift */; };
+		2524E57B2BD695BD00F3290B /* Balance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2524E57A2BD695BD00F3290B /* Balance.swift */; };
+		2524E57D2BD695EB00F3290B /* EmployeeWithBalance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2524E57C2BD695EB00F3290B /* EmployeeWithBalance.swift */; };
+		2524E57F2BD696DF00F3290B /* EmployeeBalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2524E57E2BD696DF00F3290B /* EmployeeBalanceView.swift */; };
+		2524E5822BD69B1100F3290B /* EmployeeWithBalanceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2524E5812BD69B1100F3290B /* EmployeeWithBalanceViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +81,11 @@
 		2524E5702BD07A8200F3290B /* EmployeeListView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListView2.swift; sourceTree = "<group>"; };
 		2524E5722BD07EEF00F3290B /* EmployeeGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeGridView.swift; sourceTree = "<group>"; };
 		2524E5762BD6868B00F3290B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		2524E5782BD695A800F3290B /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		2524E57A2BD695BD00F3290B /* Balance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Balance.swift; sourceTree = "<group>"; };
+		2524E57C2BD695EB00F3290B /* EmployeeWithBalance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeWithBalance.swift; sourceTree = "<group>"; };
+		2524E57E2BD696DF00F3290B /* EmployeeBalanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeBalanceView.swift; sourceTree = "<group>"; };
+		2524E5812BD69B1100F3290B /* EmployeeWithBalanceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeWithBalanceViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +136,7 @@
 		2524E5262BC98AAE00F3290B /* ServiPro */ = {
 			isa = PBXGroup;
 			children = (
+				2524E5802BD69AFA00F3290B /* ViewModel */,
 				2524E55F2BD00CF000F3290B /* Views */,
 				2524E5542BC98D5A00F3290B /* Models */,
 				2524E5532BC98CE800F3290B /* Controllers */,
@@ -179,6 +190,9 @@
 				2524E55D2BC9908600F3290B /* Order.swift */,
 				2524E5642BD01FA600F3290B /* ScheduleType.swift */,
 				2524E5662BD0487E00F3290B /* OrderManager.swift */,
+				2524E5782BD695A800F3290B /* Transaction.swift */,
+				2524E57A2BD695BD00F3290B /* Balance.swift */,
+				2524E57C2BD695EB00F3290B /* EmployeeWithBalance.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -195,8 +209,17 @@
 				2524E5702BD07A8200F3290B /* EmployeeListView2.swift */,
 				2524E5722BD07EEF00F3290B /* EmployeeGridView.swift */,
 				2524E5762BD6868B00F3290B /* ProfileView.swift */,
+				2524E57E2BD696DF00F3290B /* EmployeeBalanceView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		2524E5802BD69AFA00F3290B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2524E5812BD69B1100F3290B /* EmployeeWithBalanceViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,14 +355,19 @@
 				2524E5672BD0487E00F3290B /* OrderManager.swift in Sources */,
 				2524E56D2BD0667500F3290B /* HorizontalItemView.swift in Sources */,
 				2524E52A2BC98AAE00F3290B /* ContentView.swift in Sources */,
+				2524E57F2BD696DF00F3290B /* EmployeeBalanceView.swift in Sources */,
 				2524E55C2BC9907000F3290B /* Client.swift in Sources */,
 				2524E5732BD07EEF00F3290B /* EmployeeGridView.swift in Sources */,
 				2524E55E2BC9908600F3290B /* Order.swift in Sources */,
+				2524E57B2BD695BD00F3290B /* Balance.swift in Sources */,
+				2524E5822BD69B1100F3290B /* EmployeeWithBalanceViewModel.swift in Sources */,
 				2524E5562BC98D8100F3290B /* Employee.swift in Sources */,
+				2524E57D2BD695EB00F3290B /* EmployeeWithBalance.swift in Sources */,
 				2524E5652BD01FA600F3290B /* ScheduleType.swift in Sources */,
 				2524E5612BD00D5300F3290B /* EmployeeView.swift in Sources */,
 				2524E55A2BC9904400F3290B /* UserType.swift in Sources */,
 				2524E5772BD6868B00F3290B /* ProfileView.swift in Sources */,
+				2524E5792BD695A800F3290B /* Transaction.swift in Sources */,
 				2524E56B2BD064BA00F3290B /* VerticalItemView.swift in Sources */,
 				2524E52C2BC98AAE00F3290B /* Item.swift in Sources */,
 				2524E5712BD07A8200F3290B /* EmployeeListView2.swift in Sources */,

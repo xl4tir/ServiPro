@@ -11,10 +11,14 @@ import SwiftData
 @main
 
 struct ServiProApp: App {
+    let employee = EmployeeWithBalance(userId: 1, username: "Іван_Петренко", password: "пароль123", email: "ivan.petro@example.com", employeeId: 1001, serviceType: "Послуги з ремонту", schedule: [.monday, .wednesday, .friday], balance: 100.0)
     
     var body: some Scene {
         WindowGroup {
             
+
+            
+
                 
                 
                 TabView {
@@ -23,7 +27,7 @@ struct ServiProApp: App {
                                         Label("TestView", systemImage: "person.circle")
                                     }
                                 
-                                EmployeeGridView()
+                                EmployeeListView2()
                                     .tabItem {
                                         Label("Employee", systemImage: "person.2.circle")
                                     }
@@ -35,7 +39,7 @@ struct ServiProApp: App {
                                     }
                                 
                                 // Додайте екран для балансу (Balance)
-                                HorizontalItems()
+                    EmployeeWithBalanceView(viewModel:EmployeeWithBalanceViewModel(employee:employee))
                                     .tabItem {
                                         Label("Balance", systemImage: "creditcard.circle")
                                     }
