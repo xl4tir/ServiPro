@@ -1,8 +1,8 @@
 import Foundation
 
-struct Transaction: Hashable {
+struct Transaction: Hashable, Codable { // Додано протокол Codable
     let amount: Double
-    let type: String // "Deposit" or "Withdrawal"
+    let type: String
     let date: Date
 
     // Implementing Hashable conformance

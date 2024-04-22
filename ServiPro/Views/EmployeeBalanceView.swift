@@ -17,7 +17,7 @@ struct EmployeeWithBalanceView: View {
             Text("Balance")
                 .font(.title)
                 .padding()
-            Text("\(viewModel.currentBalance)")
+            Text("\(viewModel.currentBalance) UAH")
                 .font(.title)
                 .padding()
             
