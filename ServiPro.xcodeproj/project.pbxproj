@@ -37,6 +37,8 @@
 		2524E5822BD69B1100F3290B /* EmployeeWithBalanceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2524E5812BD69B1100F3290B /* EmployeeWithBalanceViewModel.swift */; };
 		2524E5842BD6CCC400F3290B /* EmployeesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2524E5832BD6CCC400F3290B /* EmployeesViewModel.swift */; };
 		2524E5862BD6CDED00F3290B /* EmployeesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2524E5852BD6CDED00F3290B /* EmployeesView.swift */; };
+		2524E5882BD7074B00F3290B /* OrderListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2524E5872BD7074B00F3290B /* OrderListViewModel.swift */; };
+		2524E58A2BD7078100F3290B /* OrdersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2524E5892BD7078100F3290B /* OrdersView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +92,8 @@
 		2524E5812BD69B1100F3290B /* EmployeeWithBalanceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeWithBalanceViewModel.swift; sourceTree = "<group>"; };
 		2524E5832BD6CCC400F3290B /* EmployeesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesViewModel.swift; sourceTree = "<group>"; };
 		2524E5852BD6CDED00F3290B /* EmployeesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesView.swift; sourceTree = "<group>"; };
+		2524E5872BD7074B00F3290B /* OrderListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListViewModel.swift; sourceTree = "<group>"; };
+		2524E5892BD7078100F3290B /* OrdersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +219,7 @@
 				2524E5762BD6868B00F3290B /* ProfileView.swift */,
 				2524E57E2BD696DF00F3290B /* EmployeeBalanceView.swift */,
 				2524E5852BD6CDED00F3290B /* EmployeesView.swift */,
+				2524E5892BD7078100F3290B /* OrdersView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -224,6 +229,7 @@
 			children = (
 				2524E5812BD69B1100F3290B /* EmployeeWithBalanceViewModel.swift */,
 				2524E5832BD6CCC400F3290B /* EmployeesViewModel.swift */,
+				2524E5872BD7074B00F3290B /* OrderListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -363,8 +369,10 @@
 				2524E5842BD6CCC400F3290B /* EmployeesViewModel.swift in Sources */,
 				2524E52A2BC98AAE00F3290B /* ContentView.swift in Sources */,
 				2524E57F2BD696DF00F3290B /* EmployeeBalanceView.swift in Sources */,
+				2524E5882BD7074B00F3290B /* OrderListViewModel.swift in Sources */,
 				2524E55C2BC9907000F3290B /* Client.swift in Sources */,
 				2524E5732BD07EEF00F3290B /* EmployeeGridView.swift in Sources */,
+				2524E58A2BD7078100F3290B /* OrdersView.swift in Sources */,
 				2524E5862BD6CDED00F3290B /* EmployeesView.swift in Sources */,
 				2524E55E2BC9908600F3290B /* Order.swift in Sources */,
 				2524E57B2BD695BD00F3290B /* Balance.swift in Sources */,

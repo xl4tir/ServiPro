@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct ProfileView: View {
-    let employee = Employee(userId: 1, username: "Іван_Петренко", password: "пароль123", email: "ivan.petro@example.com", employeeId: 1001, serviceType: "Послуги з ремонту", schedule: [.monday, .wednesday, .friday])
+    let employee = EmployeeWithBalance(userId: 1, username: "Владислав_Опиченік", password: "pass123", email: "vlad.opychenik@example.com", employeeId: 1001, serviceType: "Послуги з ремонту", schedule: [.monday, .wednesday, .friday], balance: 100.0)
     
     var body: some View {
         NavigationView {
@@ -43,7 +43,16 @@ struct ProfileView: View {
                 }
                 .listStyle(PlainListStyle())
                 .frame(minWidth: 200, idealWidth: 250, maxWidth: 400)
-                .navigationTitle("Profile")
+                
+                .navigationBarTitleDisplayMode(.inline)
+                .toolbar {
+                    ToolbarItem(placement: .principal) {
+                        Text("Profile").fontWeight(.semibold)
+                            .font(.system(size: 20))
+                            
+                    }
+                }
+
                 
             }
             .padding()

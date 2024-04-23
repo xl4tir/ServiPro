@@ -8,11 +8,18 @@ class Client: User {
         super.init(userId: userId, username: username, password: password, email: email, userType: .client)
     }
     
+
+    init() {
+        self.clientId = 0
+        self.contactInfo = ""
+        super.init(userId: 0, username: "Anonymous", password: "password", email: "client@example.com", userType: .client)
+    }
+    
     func placeOrder(serviceType: String, details: String) {
-        
+
     }
     
     func contactEmployee(employeeId: Int) {
-     
+
     }
 }

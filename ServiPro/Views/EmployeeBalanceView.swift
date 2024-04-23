@@ -15,11 +15,12 @@ struct EmployeeWithBalanceView: View {
     var body: some View {
         VStack {
             Text("Balance")
-                .font(.title)
-                .padding()
+                .fontWeight(.semibold)
+                .font(.system(size: 18))
+                .padding(.top, 5)
             Text("\(viewModel.currentBalance) UAH")
                 .font(.title)
-                .padding()
+                .padding(.top, 50)
             
             HStack {
                 Button(action: {

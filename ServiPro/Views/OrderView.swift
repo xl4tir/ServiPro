@@ -16,7 +16,7 @@ struct OrderView: View {
                     .padding()
                 
                 Button(action: {
-                    order = Order(orderId: 1, client: client, employee: employee, serviceType: "Доставка їжі", status: "В процесі", details: nil)
+                    order = Order(orderId: 1, client: client, employee: employee, serviceType: "Доставка їжі", status: "В процесі", details: nil, workPrice: 100)
 
                     print("Замовлення створено!")
                 }, label: {
