@@ -5,6 +5,7 @@ struct EmployeesView: View {
     @State private var selectedServiceType: String = ""
     @State private var selectedSortType: SortType = .byNameAscending
     @State private var selectedTab = 0
+     static let gridItems = [GridItem(.flexible(), spacing: 10)]
     
     var body: some View {
         NavigationView {
@@ -16,14 +17,13 @@ struct EmployeesView: View {
                 }
                 .pickerStyle(SegmentedPickerStyle())
                 .padding(.horizontal, 20)
-                
                 .clipShape(RoundedRectangle(cornerRadius: 8))
                 .padding(.horizontal, 40)
                 .padding(.bottom, 10)
                 
                 switch selectedTab {
                 case 0:
-                    EmployeeListView1(employees: viewModel.employees, title: "All Employees")
+                    EmployeeGridView1(employees: viewModel.employees, title: "All Employees")
                 case 1:
                     VStack {
                         HStack {
@@ -35,12 +35,12 @@ struct EmployeesView: View {
                                 Image(systemName: selectedSortType == .byNameAscending ? "arrow.down.circle" : "arrow.up.circle")
                             }
                         }
-                        EmployeeListView1(employees: viewModel.sortedEmployees, title: "Sorted Employees")
+                        EmployeeGridView1(employees: viewModel.sortedEmployees, title: "Sorted Employees")
                     }
                 case 2:
                     FilteredEmployeeView(viewModel: viewModel, selectedServiceType: $selectedServiceType)
                 default:
-                    EmployeeListView1(employees: viewModel.employees, title: "All Employees")
+                    EmployeeGridView1(employees: viewModel.employees, title: "All Employees")
                 }
             }
             .navigationBarTitleDisplayMode(.inline)
@@ -51,13 +51,20 @@ struct EmployeesView: View {
     }
 }
 
-struct EmployeeListView1: View {
+struct EmployeeGridView1: View {
     let employees: [Employee]
     let title: String
+    let gridItems = [GridItem(.flexible(), spacing: 10)]
     
     var body: some View {
-        List(employees, id: \.username) { employee in
-            EmployeeRow2(employee: employee)
+        ScrollView {
+            LazyVGrid(columns: gridItems, spacing: 10) {
+                ForEach(employees, id: \.username) { employee in
+                    EmployeeRow2(employee: employee)
+                        .frame(maxWidth: .infinity)
+                }
+            }
+            .padding()
         }
         .navigationTitle(title)
     }
@@ -78,8 +85,14 @@ struct FilteredEmployeeView: View {
             }
             .padding()
             
-            List(viewModel.filteredEmployees, id: \.username) { employee in
-                EmployeeRow2(employee: employee)
+            ScrollView {
+                LazyVGrid(columns: EmployeesView.gridItems, spacing: 10) {
+                    ForEach(viewModel.filteredEmployees, id: \.username) { employee in
+                        EmployeeRow2(employee: employee)
+                            .frame(maxWidth: .infinity)
+                    }
+                }
+                .padding()
             }
             .navigationTitle("Filtered Employees")
         }
@@ -89,23 +102,26 @@ struct EmployeeRow2: View {
     let employee: Employee
     
     var body: some View {
-        HStack {
-            Image(systemName: "person.circle.fill")
-                .resizable()
-                .frame(width: 32, height: 32)
-                .foregroundColor(.blue)
-            VStack(alignment: .leading) {
-                Text(employee.username)
-                    .font(.headline)
-                Text("Service Type: \(employee.serviceType)")
-                    .font(.subheadline)
-                Text("Email: \(employee.email)")
-                    .font(.subheadline)
+        NavigationLink(destination: EmployeeDetailView(employee: employee)) {
+            HStack {
+                Image(systemName: "person.circle.fill")
+                    .resizable()
+                    .frame(width: 32, height: 32)
+                    .foregroundColor(.blue)
+                VStack(alignment: .leading) {
+                    Text(employee.username)
+                        .font(.headline)
+                    Text("Service Type: \(employee.serviceType)")
+                        .font(.subheadline)
+                    Text("Email: \(employee.email)")
+                        .font(.subheadline)
+                }
             }
+            .padding()
+            .background(Color.gray.opacity(0.1))
+            .cornerRadius(10)
+            .padding(.vertical, 5)
         }
-        .padding()
-        .background(Color.gray.opacity(0.1))
-        .cornerRadius(10)
-        .padding(.vertical, 5)
     }
 }
+

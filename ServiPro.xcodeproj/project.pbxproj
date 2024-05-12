@@ -39,6 +39,7 @@
 		2524E5862BD6CDED00F3290B /* EmployeesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2524E5852BD6CDED00F3290B /* EmployeesView.swift */; };
 		2524E5882BD7074B00F3290B /* OrderListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2524E5872BD7074B00F3290B /* OrderListViewModel.swift */; };
 		2524E58A2BD7078100F3290B /* OrdersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2524E5892BD7078100F3290B /* OrdersView.swift */; };
+		2524E58C2BD7BCC100F3290B /* EmployeeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2524E58B2BD7BCC100F3290B /* EmployeeDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,7 @@
 		2524E5852BD6CDED00F3290B /* EmployeesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesView.swift; sourceTree = "<group>"; };
 		2524E5872BD7074B00F3290B /* OrderListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListViewModel.swift; sourceTree = "<group>"; };
 		2524E5892BD7078100F3290B /* OrdersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersView.swift; sourceTree = "<group>"; };
+		2524E58B2BD7BCC100F3290B /* EmployeeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +222,7 @@
 				2524E57E2BD696DF00F3290B /* EmployeeBalanceView.swift */,
 				2524E5852BD6CDED00F3290B /* EmployeesView.swift */,
 				2524E5892BD7078100F3290B /* OrdersView.swift */,
+				2524E58B2BD7BCC100F3290B /* EmployeeDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -381,6 +384,7 @@
 				2524E57D2BD695EB00F3290B /* EmployeeWithBalance.swift in Sources */,
 				2524E5652BD01FA600F3290B /* ScheduleType.swift in Sources */,
 				2524E5612BD00D5300F3290B /* EmployeeView.swift in Sources */,
+				2524E58C2BD7BCC100F3290B /* EmployeeDetailView.swift in Sources */,
 				2524E55A2BC9904400F3290B /* UserType.swift in Sources */,
 				2524E5772BD6868B00F3290B /* ProfileView.swift in Sources */,
 				2524E5792BD695A800F3290B /* Transaction.swift in Sources */,

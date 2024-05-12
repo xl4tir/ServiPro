@@ -1,13 +1,4 @@
-//
-//  ContentView.swift
-//  ServiPro
-//
-//  Created by Владислав Опиченік on 12.04.2024.
-//
-
 import SwiftUI
-import SwiftData
-
 
 struct ContentView: View {
     @StateObject var user: User = User(userId: 1, username: "john_doe", password: "password123", email: "john.doe@example.com", userType: .client)
@@ -16,22 +7,22 @@ struct ContentView: View {
     @State private var newEmail = ""
 
     var body: some View {
-        NavigationView {
-            VStack(alignment: .leading, spacing: 10) {
-                user.displayUserInfo()
-                
-                Button("Update Profile") {
-                    isEditingProfile = true
-                    newName = user.username
-                    newEmail = user.email
-                }
-                .sheet(isPresented: $isEditingProfile) {
-                    EditProfileView(user: user, newName: $newName, newEmail: $newEmail, isEditingProfile: $isEditingProfile)
-                }
+        VStack(alignment: .leading, spacing: 10) {
+           
+            user.displayUserInfo()
+            
+            Button("Update Profile") {
+                isEditingProfile = true
+                newName = user.username
+                newEmail = user.email
             }
-            .padding()
-            .navigationTitle("Profile")
+            .buttonStyle(PrimaryButtonStyle())
+            .sheet(isPresented: $isEditingProfile) {
+                EditProfileView(user: user, newName: $newName, newEmail: $newEmail, isEditingProfile: $isEditingProfile)
+            }
         }
+        .padding()
+        .navigationTitle("User Profile")
     }
 }
 
@@ -44,8 +35,9 @@ struct EditProfileView: View {
     var body: some View {
         VStack {
             Text("Edit Profile")
-                .font(.headline)
-                .padding(.bottom, 20)
+                .fontWeight(.semibold)
+                                .font(.system(size: 18))
+                                .padding(.top, 5)
             
             TextField("New Username", text: $newName)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
@@ -57,17 +49,28 @@ struct EditProfileView: View {
             
             Button("Save") {
                 user.updateProfile(username: newName, email: newEmail)
-                newName = ""
-                newEmail = ""
                 isEditingProfile = false
             }
+            .buttonStyle(PrimaryButtonStyle())
             .padding()
         }
         .padding()
     }
 }
 
-#Preview {
-    ContentView()
-        .modelContainer(for: Item.self, inMemory: true)
+struct PrimaryButtonStyle: ButtonStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .foregroundColor(.white)
+            .padding()
+            .background(Color.blue)
+            .cornerRadius(8)
+            .scaleEffect(configuration.isPressed ? 0.95 : 1.0)
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
 }

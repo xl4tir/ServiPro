@@ -14,9 +14,9 @@ class Balance {
     func withdraw(amount: Double) -> Bool {
         if amount <= self.amount {
             self.amount -= amount
-            return true // Виведення успішне
+            return true
         } else {
-            return false // Недостатньо коштів для виведення
+            return false
         }
     }
     

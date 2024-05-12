@@ -2,17 +2,18 @@ import SwiftUI
 
 struct OrdersView: View {
     @ObservedObject var orderListViewModel: OrderListViewModel
+    @Environment(\.horizontalSizeClass) var horizontalSizeClass
 
     var body: some View {
-        VStack {
-            Text("All orders")
+        ScrollView {
+            VStack(spacing: 10) {
                 
-                .fontWeight(.semibold)
-                .font(.system(size: 18))
-                .padding(.top, 5)
-            
-            ScrollView {
-                VStack(spacing: 10) {
+                Text("Orders")
+                    .fontWeight(.semibold)
+                    .font(.system(size: 18))
+                    .padding(.top, 5)
+                
+                if horizontalSizeClass == .compact {
                     ForEach(orderListViewModel.orders) { order in
                         OrderListView(viewModel: orderListViewModel, order: order)
                             .frame(maxWidth: .infinity, alignment: .leading)
@@ -20,34 +21,60 @@ struct OrdersView: View {
                             .cornerRadius(10)
                             .padding(.vertical, 5)
                     }
+                } else {
+                    LazyVGrid(columns: [
+                        GridItem(.adaptive(minimum: 200), spacing: 10),
+                        GridItem(.adaptive(minimum: 200), spacing: 10)
+                    ], spacing: 10) {
+                        ForEach(orderListViewModel.orders) { order in
+                            OrderListView(viewModel: orderListViewModel, order: order)
+                                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                                .background(Color.gray.opacity(0.1))
+                                .cornerRadius(10)
+                                .padding(.vertical, 5)
+                        }
+                    }
                 }
-                .padding()
+            }
+            .padding()
+            
+        }
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItem(placement: .principal) {
+                Text("Orders").fontWeight(.semibold)
+                    .font(.system(size: 20))
+                    
             }
         }
-        .navigationTitle("All orders")
     }
+      
 }
+
 struct OrderListView: View {
     @ObservedObject var viewModel: OrderListViewModel
     var order: Order
 
     var body: some View {
         VStack(alignment: .leading, spacing: 5) {
-            Text("Замовлення ID: \(order.orderId)")
+            Text("Order ID: \(order.orderId)")
                 .font(.headline)
-            Text("Тип послуги: \(order.serviceType)")
+            Text("Service Type: \(order.serviceType)")
                 .font(.subheadline)
-            Text("Ціна роботи: \(order.workPrice)")
+            Text("Work Price: \(order.workPrice)")
                 .font(.subheadline)
-            Text("Статус: \(order.status)")
+            Text("Status: \(order.status)")
                 .font(.subheadline)
             Button(action: {
                 viewModel.changeOrderStatus(order: order)
             }) {
-                Text("Змінити статус")
+                Text("Change Status")
                     .foregroundColor(.blue)
             }
         }
-        .padding(10) 
+        .padding(10)
+        
+        .cornerRadius(10)
+        .padding(.vertical, 5)
     }
 }

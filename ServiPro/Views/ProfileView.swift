@@ -1,24 +1,21 @@
 import SwiftUI
 
 struct ProfileView: View {
+    @State private var selection: NavigationLinkDestination?
     let employee = EmployeeWithBalance(userId: 1, username: "Владислав_Опиченік", password: "pass123", email: "vlad.opychenik@example.com", employeeId: 1001, serviceType: "Послуги з ремонту", schedule: [.monday, .wednesday, .friday], balance: 100.0)
     
     var body: some View {
         NavigationView {
-            VStack(spacing: 20) {
+            VStack(spacing: 5) {
                 employee.displayUserInfo()
                 
-                Button("View Schedule") {
-                    employee.viewSchedule()
-                }
-                .padding()
-                
+    
                 Spacer()
                 
                 List {
-                    NavigationLink(destination: ContentView()) {
-                        Label("User", systemImage: "person.circle")
-                    }
+                    NavigationLink(destination: ContentView(), tag: .contentView, selection: $selection) {
+                                            Label("User", systemImage: "person.circle")
+                                        }
                     NavigationLink(destination: EmployeeView()) {
                         Label("Employee", systemImage: "person.2.circle")
                     }
@@ -56,8 +53,15 @@ struct ProfileView: View {
                 
             }
             .padding()
-            
+            .onAppear {
+                        
+                selection = .contentView
+                       }
             
         }
     }
+}
+enum NavigationLinkDestination {
+    case contentView
+    // Add more cases for other destinations if needed
 }

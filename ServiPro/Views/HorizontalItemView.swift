@@ -21,7 +21,7 @@ struct HorizontalItemView: View {
 
 struct HorizontalItems: View {
     var body: some View {
-        HStack(spacing: 20) {
+        VStack(spacing: 20) {
             HorizontalItemView(title: "User", imageName: "person.fill")
             HorizontalItemView(title: "Top Employee", imageName: "star.fill")
             HorizontalItemView(title: "Orders", imageName: "book.fill")
